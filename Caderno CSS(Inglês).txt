@@ -1,11 +1,14 @@
 freeCodeCamp.org
-11:07 02/09/2020 		6 hours
-Select and edit
+Begin: 11:07 02/09/2020 		6 hours
+End:
+by OTÁVIO	maybe I put this txt in Markdown language (in a distant future)
+__________________________________________________
+Operation: Select and edit
 
 In CSS we use selectors
 	Types: 
 
-    1) Element selector: use the tag.
+    1) Element selector: uses the tag.
 	<p> </p> -> p {	}
 
     2) Class selector: to specific items 
@@ -23,6 +26,51 @@ How to link a CSS file to a HTML one
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 
-Specificity: the more specific selector overrides other ones
-	Rules:
+Specificity: the more specific selector overrides other 
+	inline-style > id > class > element
 
+    <h2 class="about-me" id="me-about" style="color: steelblue;">
+
+What are the differences between class and id?
+	- As seem, id is more specific.
+	CLASS: to be used multiple times
+	ID: despite working if set in more than one object, the convention is to use once.
+
+Pseudoselectors
+	- Used after a colon (:)
+	- Don't let space
+    h2:hover {
+		/*properties if pointer is over the selector's object and this is the most specific*/ 
+    }
+
+    ul:first-child { } does not work
+    li:first-child {
+	color: blue;
+    } /*works. It's the first list item*/
+
+		first-child, last-child, nth-child(n), only-child (does not apply to multiple children)
+
+
+More pseudoselectors
+	link is unvisited link
+	visited's default color: purple
+
+    <a href="https://google.com" id="google-link">Clique aqui para ir ao Google!</a>
+	- You need to put https to create a web link
+	- The id is dispensable because it's the only link on page
+
+    #google-link:link {		/*before clicking*/
+	color: green;
+    }
+
+    #google-link:visited {
+	color: red;
+    }
+
+
+Advanced selectors
+    
+
+
+
+	

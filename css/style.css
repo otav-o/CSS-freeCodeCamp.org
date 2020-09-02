@@ -1,13 +1,29 @@
-.titulo1 {
+h2:hover {
 	color: red;
 }
-h2 {
+.about-me {
+	color: blue;
+}
+#me-about {
+	color: green;
+}	/*inline syle > id > class > element*/
+
+li:last-child {
+	color: steelblue;
+}	/*wtfff*/
+
+li:nth-child(2) {	/*every second list item will be thus*/
 	color: red;
 }
-.subtitulo {
+
+li:first-child {
+	color: green;
+}
+
+#google-link:link {
 	color: blue;
 }
 
-#contato {
-	color: green;
+a:visited {
+	color: red;
 }
