@@ -1,0 +1,28 @@
+freeCodeCamp.org
+11:07 02/09/2020 		6 hours
+Select and edit
+
+In CSS we use selectors
+	Types: 
+
+    1) Element selector: use the tag.
+	<p> </p> -> p {	}
+
+    2) Class selector: to specific items 
+	<p class="aclass"> </p> -> .aclass { }
+	- to several items (h1, p...)
+	- dot is used as prefix
+
+    3) Id selector:
+	<p id="sometext"> </p> -> #sometext { }
+	- octothorp
+
+How to link a CSS file to a HTML one
+	- In <head> </head> : 
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+Specificity: the more specific selector overrides other ones
+	Rules:
+
