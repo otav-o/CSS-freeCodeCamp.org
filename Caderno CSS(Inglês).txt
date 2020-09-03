@@ -91,7 +91,27 @@ Advanced selectors
     }
     
 
-Atribute selectors
-a)
+Attribute selectors
+    x[atrr=value] {  }
+    h2[class='about-me'] { }	/*quotes are not imperative*/
 
+    img[src^=...] { }	/*the attribute begins with this value*/
+    img[src$=...] { } 	/*the attribute ends with this value*/
+    img[src*=...] { } 	/*if it contains anywhere*/
+
+	
+a) White space attribute selector
+
+    <h2 class="subtitle article-subtitle"> </h2> -> h2[class~="article-subtitle"]
+	- you have to use ~=
+	- dont forget the space between class and
+
+b) General attribute selector (I couldn't understand!)
+    h2[class|=article-subtitle] { /*dash*/
+	background: green;
+}
+
+
+Properties
+	
 	

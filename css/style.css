@@ -1,12 +1,10 @@
 h2:hover {
 	color: red;
 }
-.about-me {
-	color: blue;
+h2[class='about-me'] {	/*quotes are not needed*/
+	color: steelblue;
+	/*same as .about-me {}*/
 }
-#me-about {
-	color: green;
-}	/*inline syle > id > class > element*/
 
 /*
 li:last-child {
@@ -45,4 +43,17 @@ ul > li {	/*child selector; every li inside ul*/
 
 ul li { 	/*descendant selector*/
 	color: green;
+}
+
+img[src^="../img/"] {	/*all images that src atribute starts (^) with this value. ^, $, * */
+	border: 10px solid black;
+
+}
+
+h2[class~="article-subtitle"] { /*white space*/
+	background: red;
+}
+
+h2[class|=article-subtitle] { /*dash*/
+	background: green;
 }
