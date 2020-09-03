@@ -1,59 +1,28 @@
-h2:hover {
-	color: red;
-}
-h2[class='about-me'] {	/*quotes are not needed*/
-	color: steelblue;
-	/*same as .about-me {}*/
+body {
+	background: rgb(255, 255, 0);
 }
 
-/*
-li:last-child {
-	color: steelblue;
-}	wtfff
-
-li:nth-child(2) {	/*every second list item will be thus
-	color: red;
+#title {
+	color: #68a39d;
+	background: pink;	/*as I've seen, this bg does not mix colors with the main bg*/
 }
 
-li:first-child {
-	color: green;
-} 
-*/
+h1[id=title] {
 
-/*#google-link:link {
+}
+
+.subtitle {
+	color: rgba(196, 116, 79, 1);
+}
+
+
+.para-text {
 	color: blue;
 }
 
-a:visited {
-	color: red;
-}*/
-
-h2 + a {	/*style all [the last tag, class or id (in this case, a)] that follows [the first one (h2)]. The family does not matter.*/
-	color:red;
+p[class='para-text'] {
+	color: red;	/*aparently this notation is stronger, because this block was applied*/
 }
 
-textarea ~ button {	/*child of and followed by*/
-	color:purple;
-}
 
-ul > li {	/*child selector; every li inside ul*/
-	color: yellow;
 
-}
-
-ul li { 	/*descendant selector*/
-	color: green;
-}
-
-img[src^="../img/"] {	/*all images that src atribute starts (^) with this value. ^, $, * */
-	border: 10px solid black;
-
-}
-
-h2[class~="article-subtitle"] { /*white space*/
-	background: red;
-}
-
-h2[class|=article-subtitle] { /*dash*/
-	background: green;
-}
