@@ -8,22 +8,41 @@ h2:hover {
 	color: green;
 }	/*inline syle > id > class > element*/
 
+/*
 li:last-child {
 	color: steelblue;
-}	/*wtfff*/
+}	wtfff
 
-li:nth-child(2) {	/*every second list item will be thus*/
+li:nth-child(2) {	/*every second list item will be thus
 	color: red;
 }
 
 li:first-child {
 	color: green;
-}
+} 
+*/
 
-#google-link:link {
+/*#google-link:link {
 	color: blue;
 }
 
 a:visited {
 	color: red;
+}*/
+
+h2 + a {	/*style all [the last tag, class or id (in this case, a)] that follows [the first one (h2)]. The family does not matter.*/
+	color:red;
+}
+
+textarea ~ button {	/*child of and followed by*/
+	color:purple;
+}
+
+ul > li {	/*child selector; every li inside ul*/
+	color: yellow;
+
+}
+
+ul li { 	/*descendant selector*/
+	color: green;
 }

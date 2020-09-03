@@ -21,7 +21,7 @@ In CSS we use selectors
 	- octothorp
 
 How to link a CSS file to a HTML one
-	- In <head> </head> : 
+	- Inside <head> </head> : 
 
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -40,7 +40,7 @@ Pseudoselectors
 	- Used after a colon (:)
 	- Don't let space
     h2:hover {
-		/*properties if pointer is over the selector's object and this is the most specific*/ 
+		/*properties if pointer is over the selector's object and hover is the most specific*/ 
     }
 
     ul:first-child { } does not work
@@ -69,8 +69,29 @@ More pseudoselectors
 
 
 Advanced selectors
+1)
+    h2 + a {
+    	/*every a that comes directly after h2 (that follows h2)*/
+    }
+
+2) General sibling combinator/selector
+	- the same as before, but both elements have to be sharing the same parent
+    textarea ~ button {		
+	/*to style every button followed by textarea and the same parent*/
+    }
+
+3) Child selector: direct children
+    ul > li {
+	/*every li inside ul. This is not so specific as li with pseudoselector. Does not apply to a sublist (list iniside an list item) */
+    }
+
+4) Decendant selector
+    ul li {
+	/*apply properties to li children*/
+    }
     
 
-
+Atribute selectors
+a)
 
 	
