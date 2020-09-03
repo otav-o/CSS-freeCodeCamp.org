@@ -133,10 +133,10 @@ Colors
 	- rgb() is a function.
 
 Coloring text
-	color: blue;	/*yeah it's weird but is for text*/
+    color: blue;	/*yeah it's weird but is for text*/
 
 Background colors
-	background: rgba(196, 116, 79, 1)
+    background: rgba(196, 116, 79, 1)
 		
 	- or background-color (but it is not flexible, you can not add images, for example)
 	- every selector has its own backgrounf
@@ -144,7 +144,26 @@ Background colors
 	- colors of different bgs don't mix
 
 Images by URL
-	- url() function
-	- in the next git version😎
+	- url("") function
+	- Images stored on Web or locally. 
+    background: url("https://....");
+	or background-image
+	- the image repeats if it is small and this will be solved futurely
 
+Other background properties
+    background-size: 50px 100px;
+	heigth and width <->
+	cover; 		perfect to one image in the box. Resize the image to fit the box 
+	contain; 	follows the proportion (can repeat). Fully visible
+	
+    background-repeat: no-repeat;
+	or repeat 
+
+    background-color: steelblue;
+
+
+Gradient
+	- 2 types: radial and linear.
+
+	
 

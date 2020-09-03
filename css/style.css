@@ -1,5 +1,6 @@
 body {
 	background: rgb(255, 255, 0);
+	background: url("https://static.vecteezy.com/system/resources/thumbnails/000/246/312/original/mountain-lake-sunset-landscape-first-person-view.jpg");
 }
 
 #title {
@@ -7,22 +8,21 @@ body {
 	background: pink;	/*as I've seen, this bg does not mix colors with the main bg*/
 }
 
-h1[id=title] {
-
-}
 
 .subtitle {
 	color: rgba(196, 116, 79, 1);
 }
 
+div[id=imagem-servico] {
+	height: 400px;
+	width: 70%;	/*creates an empty-invisible box*/
+	
+	background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png');
+	background-repeat: no-repeat;
+	background-color: red;
+	background-size: cover;
 
-.para-text {
-	color: blue;
-}
+	
 
-p[class='para-text'] {
-	color: red;	/*aparently this notation is stronger, because this block was applied*/
-}
-
-
+<img src="../img/img-2.jpg">
 
