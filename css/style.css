@@ -1,11 +1,11 @@
 body {
-	background: rgb(255, 255, 0);
-	background: url("https://static.vecteezy.com/system/resources/thumbnails/000/246/312/original/mountain-lake-sunset-landscape-first-person-view.jpg");
+	background: linear-gradient(to bottom, rgb(255, 255, 0), rgba(255, 255, 255, 1));
+	
 }
 
 #title {
 	color: #68a39d;
-	background: pink;	/*as I've seen, this bg does not mix colors with the main bg*/
+	background: pink;	
 }
 
 
@@ -15,14 +15,21 @@ body {
 
 div[id=imagem-servico] {
 	height: 400px;
-	width: 70%;	/*creates an empty-invisible box*/
-	
-	background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png');
-	background-repeat: no-repeat;
-	background-color: red;
-	background-size: cover;
+	width: 70%;	
 
+	background: linear-gradient(-170deg, red, green, blue);
+
+
+}
+	
+#imagem-servico-2 {
+	height: 400px;
+	width: 70%;
+
+	background: radial-gradient(circle, red 20%, green 60%, blue 2%);
+	/*by default, the first color is in center*/
+}	
 	
 
-<img src="../img/img-2.jpg">
+
 

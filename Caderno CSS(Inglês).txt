@@ -131,6 +131,7 @@ Colors
 	- The developer should use a color picker
 	- 1 is 100% opacity in rgba. 0 is transparent.
 	- rgb() is a function.
+	- you can use rgba to a color's fading.
 
 Coloring text
     color: blue;	/*yeah it's weird but is for text*/
@@ -164,6 +165,25 @@ Other background properties
 
 Gradient
 	- 2 types: radial and linear.
+    background: linear-gradient(to right, red, blue, green);
+	- you can put many colors you want. The first one is where gradient starts (the opposit of 'to')
+	- to top, bottom, right, left. bottom right, bottom left... all corners.
+	- default is to bottom (starts on top)
 
+    background: linear-gradient(-90deg, red, blue);
+	- the zero angle is on center of the object, pointed to top. -90deg = to left (starts on right). 90deg = to right. 180deg = -180deg = to bottom. 190deg = -170deg, etc.
+
+
+---
+
+    background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+	- the first color is in center (center to corners)
+	- put percentages near to colors to adjust the filling [??]
+	- ellipse (default) or circle.
+	- you can set start position and etc. [this course does not teach it]
+
+
+Type of units (introduction)
+	 
 	
 
