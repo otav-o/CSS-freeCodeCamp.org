@@ -183,7 +183,29 @@ Gradient
 	- you can set start position and etc. [this course does not teach it]
 
 
-Type of units (introduction)
-	 
-	
+Types of units (introduction)
+	- Absolute units: centimeters, inches - they aren't affected by anyone
+	- Relative units: percentage
+		- Responsive interface
 
+	- Pixels can be considered absolute, but the display's resolution changes the visualization. In practice they are relative
+
+    font-size: 2cm;
+	or 2mm, 2px, 2pt (point - a little bigger than pixel), 2pc (1pc equals 12 points - much bigger than it)
+
+    height: 400px; 	/*depends on your display*/
+    width: 70%;		/*70% of screen's horizontal axis. Dynamic.*/
+
+    font-size: 2em;	/*double. Works only for fonts (?)*/
+    height: 2em;
+
+Viewport
+	- How many percent of width or heigth the element will occupy.
+	- vw and vh
+	- viewport is a bit bigger than body
+
+    heigth: 400vh;	/*400% display height (does not mean cover all screen or extrapolate the limits. The object is inside page)
+    width: 70vw;
+
+
+Text manipulation

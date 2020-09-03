@@ -1,6 +1,6 @@
 body {
 	background: linear-gradient(to bottom, rgb(255, 255, 0), rgba(255, 255, 255, 1));
-	
+	font-size: 0.5cm;
 }
 
 #title {
@@ -15,7 +15,7 @@ body {
 
 div[id=imagem-servico] {
 	height: 400px;
-	width: 70%;	
+	width: 70%;	/*relative unit. 70% of horizontal axis (dynamic)*/
 
 	background: linear-gradient(-170deg, red, green, blue);
 
@@ -23,8 +23,8 @@ div[id=imagem-servico] {
 }
 	
 #imagem-servico-2 {
-	height: 400px;
-	width: 70%;
+	height: 400vh;
+	width: 70vw;
 
 	background: radial-gradient(circle, red 20%, green 60%, blue 2%);
 	/*by default, the first color is in center*/
