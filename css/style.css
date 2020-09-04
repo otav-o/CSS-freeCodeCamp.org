@@ -1,24 +1,56 @@
 body {
 	background: linear-gradient(to bottom, rgb(255, 255, 0), rgba(255, 255, 255, 1));
-	font-size: 0.5cm;
-}
-
-#title {
-	color: #68a39d;
-	background: pink;	
+	font-size: 1.25em;
 }
 
 
-.subtitle {
-	color: rgba(196, 116, 79, 1);
+.para-text {
+	text-align: justify;
+	text-indent: 50px;
 }
+
+p[id=paragrafo1] {
+	font-weight: 900;
+	
+
+}
+	
+#paragrafo2 {
+	text-family: serif;
+	font-weight: 50;	/*seems 400 is the minimum value*/
+	
+}
+
+
+span[id=trecho1] {
+	text-decoration: underline;
+	text-transform: capitalize;
+
+
+}
+#trecho2 {
+	text-transform: uppercase;
+	text-decoration: line-through;
+	font-size: 40px;
+}
+
+
+span[id=trecho3] {
+	font-style: oblique; /*stronger than italic*/
+	font-family: sans-serif;
+
+}
+
+
+
+
+
 
 div[id=imagem-servico] {
 	height: 400px;
 	width: 70%;	/*relative unit. 70% of horizontal axis (dynamic)*/
 
 	background: linear-gradient(-170deg, red, green, blue);
-
 
 }
 	

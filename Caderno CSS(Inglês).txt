@@ -208,4 +208,33 @@ Viewport
     width: 70vw;
 
 
-Text manipulation
+Text manipulation (the font does not matter. Text only!)
+    text-decoration: underline;
+	or: line-through (same as <del>), overline, none;
+    text-transform: uppercase;
+	or: lowecase, capitalize;
+    text-align: justify;
+	or: left, right, center;
+
+Font-manipulation
+    font-size: 2em;  or 40px;
+    font-weight: 500;
+	- Bolding. From 0 to infinity, but most fonts are to 800 or 900. 400 is the normal.
+	- depends on the font
+    font-style: normal;
+	or italic, oblique (more italicized)
+
+<span> </span> inline container
+
+Font families
+	- A colection of fonts that have similar features
+	- serif fonts: TNR, Georgia, Palatino, Garamond
+	- sans serif fonts (much easier to read) - arial, calibri, georgia
+	- monospace (all characteres have same width)
+
+    font-family: sans-serif;	(general sans-serif font)
+    font-family: "Times New Roman", serif;
+	- meaning: if TNR is available, apply it, but if is not, return to serif.
+	- the best choice commonly is a sans-serif type.
+
+Including external fonts with Google Fonts
