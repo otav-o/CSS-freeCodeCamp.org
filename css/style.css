@@ -3,65 +3,16 @@ body {
 	font-size: 1.25em;
 }
 
+#title {
+	font-family: 'Long Cang', cursive;	/*backup font if connection fails*/
+}
 
 .para-text {
 	text-align: justify;
 	text-indent: 50px;
+	font-family: "lexend Peta", cursive; /*you don't have to capitalize the name*/
 }
 
-p[id=paragrafo1] {
-	font-weight: 900;
-	
-
-}
-	
-#paragrafo2 {
-	text-family: serif;
-	font-weight: 50;	/*seems 400 is the minimum value*/
-	
-}
-
-
-span[id=trecho1] {
-	text-decoration: underline;
-	text-transform: capitalize;
-
-
-}
-#trecho2 {
-	text-transform: uppercase;
-	text-decoration: line-through;
-	font-size: 40px;
-}
-
-
-span[id=trecho3] {
-	font-style: oblique; /*stronger than italic*/
-	font-family: sans-serif;
-
-}
-
-
-
-
-
-
-div[id=imagem-servico] {
-	height: 400px;
-	width: 70%;	/*relative unit. 70% of horizontal axis (dynamic)*/
-
-	background: linear-gradient(-170deg, red, green, blue);
-
-}
-	
-#imagem-servico-2 {
-	height: 400vh;
-	width: 70vw;
-
-	background: radial-gradient(circle, red 20%, green 60%, blue 2%);
-	/*by default, the first color is in center*/
-}	
-	
 
 
 

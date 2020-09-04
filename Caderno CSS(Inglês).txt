@@ -221,7 +221,7 @@ Font-manipulation
     font-weight: 500;
 	- Bolding. From 0 to infinity, but most fonts are to 800 or 900. 400 is the normal.
 	- depends on the font
-    font-style: normal;
+    font-style: normal;		/*different from font-family*/
 	or italic, oblique (more italicized)
 
 <span> </span> inline container
@@ -231,10 +231,27 @@ Font families
 	- serif fonts: TNR, Georgia, Palatino, Garamond
 	- sans serif fonts (much easier to read) - arial, calibri, georgia
 	- monospace (all characteres have same width)
+	- cursive;
 
     font-family: sans-serif;	(general sans-serif font)
     font-family: "Times New Roman", serif;
 	- meaning: if TNR is available, apply it, but if is not, return to serif.
 	- the best choice commonly is a sans-serif type.
 
+Commonly, in Web Design, the creator selects two fonts: one for heading and another for text.
+
 Including external fonts with Google Fonts
+	https://fonts.google.com
+	- There are more fonts there than stored in your computer or css script. 
+	- Do not select so many properties (italic, bold, regular) because loading time will be longer
+
+Using external fonts
+	<link href="">	on html head.
+	- Then, just add the name in font-family. So easy.
+
+	- In case of font's server fails or connection of your computer to internet is unavailable -> backup font
+    font-family: "Lato", sans-serif;
+
+CSS BOX MODEL ---
+	
+	
