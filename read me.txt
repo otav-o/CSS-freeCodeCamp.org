@@ -1,5 +1,0 @@
-Name: CSS Tutorial - Zero to Hero (6h)
-<https://www.youtube.com/watch?v=1Rs2ND1ryYc&ab_channel=freeCodeCamp.org>
-
-Begin: 11:28 02-September-2020
-End:

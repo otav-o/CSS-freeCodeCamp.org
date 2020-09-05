@@ -1,16 +1,50 @@
 body {
 	background: linear-gradient(to bottom, rgb(255, 255, 0), rgba(255, 255, 255, 1));
-	font-size: 1.25em;
-}
-
-#title {
-	font-family: 'Long Cang', cursive;	/*backup font if connection fails*/
+	font-size: 1.15em;
+	text-align: justify;
+	font-family: serif;
 }
 
 .para-text {
 	text-align: justify;
 	text-indent: 50px;
-	font-family: "lexend Peta", cursive; /*you don't have to capitalize the name*/
+	font-family: cursive;
+	
+}
+
+#title {
+	color: rgb(186, 133, 9);
+	font-family: cursive;	
+	
+}
+
+.subtitle {
+	color: rgb(200, 148, 30);
+	font-family: cursive;
+}
+
+/*-------------------------------------------*/
+
+#sobre-mim-imagem {
+	height: 300px;
+	width: 60vw;
+	border: 10px solid #000;
+	margin: 40px;
+	float: right;
+}
+
+div[id=service-image] {
+	height: 400px;
+	width: 70%;	/*or 70 vw; (larger)*/
+	background: radial-gradient(circle, red 20%, green, blue);	
+}
+
+.link {
+	text-decoration: underline;
+}
+
+table[class=tabela] {
+	display: inline-block;
 }
 
 

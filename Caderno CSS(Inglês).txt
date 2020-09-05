@@ -152,10 +152,9 @@ Images by URL
 	- the image repeats if it is small and this will be solved futurely
 
 Other background properties
-    background-size: 50px 100px;
-	heigth and width <->
-	cover; 		perfect to one image in the box. Resize the image to fit the box 
-	contain; 	follows the proportion (can repeat). Fully visible
+    background-size: 50px 100px; [height and width <->]
+	or cover; 		perfect to one image in the box. Resize the image to fit the box 
+	or contain; 	follows the proportion (can repeat). Fully visible
 	
     background-repeat: no-repeat;
 	or repeat 
@@ -200,11 +199,11 @@ Types of units (introduction)
     height: 2em;
 
 Viewport
-	- How many percent of width or heigth the element will occupy.
+	- How many percent of width or height the element will occupy.
 	- vw and vh
 	- viewport is a bit bigger than body
 
-    heigth: 400vh;	/*400% display height (does not mean cover all screen or extrapolate the limits. The object is inside page)
+    height: 400vh;	/*400% display height (does not mean cover all screen or extrapolate the limits. The object is inside page)
     width: 70vw;
 
 
@@ -253,5 +252,66 @@ Using external fonts
     font-family: "Lato", sans-serif;
 
 CSS BOX MODEL ---
+	- Box Model is a series of positioning properties designed to help with layout.
+	- Each property works in a different way, and positions the item with different spacing.
+	- It is the most commonly used way to position items.
+	- Other models not the box model: Flex Box
+
+	Layers: content, padding, border, margin
+
+2) Padding: represents the space between the content and the border. Give more room around content. Internal space.
+    padding: 10px 20px;
+	- top, right, bottom, left (clockwise)
+	- only one value: all sides. Two values: y and x-axis. Three values: repeats the opposite side value and apply to miss-valued (does it make sense in English?😥).
+	- 4 values separated by spaces
+    padding: 100px 40px 0 5px;
+    padding-top, padding-right, padding-botton, padding-left
+
+3) Border: divider, separation line between the padding and margin.
+	- By default, it is invisible.
+    border: 1px solid #ff00ff;
+	- Every element has its own border (you will always be able to set it)
+	- size (px, %), style (solid, double, dashed, dotted), color
+	
+4) Margin: the space between the border and all other content. External space.
+	- Moves the object through the page.
+	- Values are same as padding
+	- marging dash position
+
+move on = continue
+    
+Float and display types
+	- Inline vs block
+	- It is possible to change the way they look
+a) Float
+    float: right;
+	- the object gets a new context, starts floating, and the content goes up. But the rule is to not hide text content, so the text stays next to the object. 	- works with images, texts (titles, links...), etc.
+	- it stays above elements, but not contents.
+	- you can put a <div> float and children will inherit this
+    float: none;
+	- it's the default. Use this to invalidate inherited float
+	-- I have to study this more!
+
+
+b) Display
+    display: ;
+	- changes the display that comes by default.
+    display: none; /*the content completely disapear and it's space is occupied by other*/
+	or: inline (nivelates by top), inline-block (nivelates by bottom)
+	flex and grid?
+    display: inline-block;
+	- inline-block is very useful.
+
+
+
+Changing content size
+	- height: 400px;	/*absolute units are most used here*/
+		- can be used to boxes, images, and more (that I have not learned yet)
+	- width: 70vw;		/*relative only*/
+		- same as 70%
+
+	- Remember you can use inspect page browser's feature and emulate different devices viewing your site. Obs.: responsive (you set the display dynamically)
+
+
 	
 	
