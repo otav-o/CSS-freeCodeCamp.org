@@ -90,6 +90,7 @@ Advanced selectors
 	/*apply properties to li children*/
     }
     
+* { /*universal selector*/}
 
 Attribute selectors
     x[atrr=value] {  }
@@ -312,6 +313,38 @@ Changing content size
 
 	- Remember you can use inspect page browser's feature and emulate different devices viewing your site. Obs.: responsive (you set the display dynamically)
 
+CSS Flexbox ---
+	- Stands for 'flexible box'
+	- It is an alternative to using displays, floats and other layout properties.
+	- It is split into two main parts: the container and the items.
+	- Conteiner: the parent element in which the display type is active. This is usually in the form of a div.
+	- Flex items are child elements of the container, and make up the contents of the box. (images, links, span...)
 
+Creating a Flex container
+    	- Using divs, you can create a box in page.
+    div[class=container] {display: flex;}
+	- Setting display: flex; in parent container applies flex-direction: row; (by default) and child elements stay in same line.
+	or: block
 	
+	
+Flex direction and wrap (after setting display: flex;)
+    flex-direction: column; /*more spaced than without flex*/
+	- row, column-reverse, row-reverse (and goes to opposite side of page - right one)
+    flex-wrap: nowrap; (default value)
+	or: wrap, wrap-reverse...
+	- Breaks row, objects stopping being flexible
+
+Content alignment (flex-box)
+    justify-content: ; -> horizontal aligment
+	- flex-start (on the left), flex-end (on the right), center (in the middle)
+	- space-between (divide box equally and set same space between objects in container), space-around (same as between but creates a space between objects and box limit)
+	ps.: (non-related) padding-left, padding-right
+
+    align-items: ; -> vertical aligment
+	- flex-start (on the top), flex-end (bottom of box), center.	(3 main values)
+	- baseline (no matters the size, it aligns by object's center), stretch (default, top to bottom)
+
+Flex item order
+
+
 	
