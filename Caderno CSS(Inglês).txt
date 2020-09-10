@@ -344,7 +344,13 @@ Content alignment (flex-box)
 	- flex-start (on the top), flex-end (bottom of box), center.	(3 main values)
 	- baseline (no matters the size, it aligns by object's center), stretch (default, top to bottom)
 
-Flex item order
+FLEX ITEM ORDER
+	- All previous properties are to a flex container, but next ones are applied to items
 
+    order: 1;
+	- zero is the default position. Add a number to specify where it lands (does not start with zero)
+	- you have to set manually to each container item
+	- zeros come first, than numbers in ascending order. Example: 0000259
+	- can be more useful if combined with javascript
 
 	
