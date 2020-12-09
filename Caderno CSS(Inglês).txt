@@ -353,4 +353,8 @@ FLEX ITEM ORDER
 	- zeros come first, than numbers in ascending order. Example: 0000259
 	- can be more useful if combined with javascript
 
+SHRINK, GROW & BASIS
+	- flex-grow (proportion-size, occupy all blank spaces, zero is default, combine numbers to set relative sizes between objects. Proportion can be lost if the window be resized), flex-shrink (1 is default, 0 shrink without losing proportion. 3 the item will shrink 3 times faster than others). , flex-basis (defines a minimum width of a flex item)
+Flex-shrink
+	- 
 	
