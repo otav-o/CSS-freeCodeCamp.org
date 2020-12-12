@@ -1,0 +1,22 @@
+p {
+    color: #FFbbbb;
+    font-weight: bold;
+    font-size: 20pt;
+    background-image: url(img/cachorro.jpg);
+    
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2020/09/10/04/43/expedition-5559244_960_720.jpg), url(img/fundo2.png); /*não deu*/
+    background-size: 200px; /*alterou proporcionalmente*/
+    background-size: 250px 60px; /*largura, altura*/ /*aplica a linha mais abaixo?*/
+
+    background-repeat: repeat-x; /*repete apenas na horizontal*/
+    background-repeat: repeat-y;
+    background-repeat: repeat; /*é o padrão, se nada for definido*/
+    background-repeat: no-repeat; /*o fundo só é renderizado uma vez*/
+
+    background-position: 100px 500px; /*x, y*/
+    background-position: right bottom;
+
+}

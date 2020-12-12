@@ -1,0 +1,30 @@
+#d1, #d2, #d3, #d4, #p1 {
+
+    background-color: green;
+    padding: 20px; /*espaço entre a borda e o conteúdo interno*/
+    border: 10px dotted blue;
+    margin-top: 30px;
+
+}
+
+#d1 {
+    background-clip: border-box; 
+        /* fundo ocupa a área da borda além de todo o espaço interno. É o valor padrão*/
+}
+
+#d2 {
+    background-clip: content-box;
+        /* fundo só ocupa a área de conteúdo */
+}
+
+#d3 {
+    background-clip: padding-box;
+        /* fundo ocupa somente o espaço interno, sem incluir a borda */
+}
+
+#p1 {
+    color: #fff;
+    background-clip: content-box;
+    padding: 200px 500px 40px 100px; 
+        /* topo, direita, baixo, esquerda */
+}

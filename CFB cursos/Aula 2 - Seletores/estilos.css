@@ -1,0 +1,18 @@
+h1, h4, h5 { /*h1 e h4 não ficam vermelhos pois a classe sobrescreve*/
+    color: red;
+    font-size: 20px; /*mas h1 e h4 têm o tamanho alterado pois a classe é omissa quanto a isso*/
+}
+
+a {
+    background-color: yellow;
+}
+
+.titulo {
+    color: green;
+}
+
+#texto { /*na verdade é possível ter o id em mais de uma tag*/
+    color: blue;
+}
+
+
