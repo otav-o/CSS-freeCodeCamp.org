@@ -329,4 +329,166 @@ p {
   }
   ```
 
-  
+---
+
+### Aula 12 - transparência nas cores
+
+- RGBA: red, green, blue, alpha
+  - Alpha: valor de 0 a 1 que indica a opacidade. 0 é completamente transparente, e 1 é totalmente opaco.
+- Serve para texto, background, etc.
+
+`color: rgba(0, 255, 100, 0.25);`
+
+---
+
+### Aula 13 - Margens e centralização
+
+- margin: espaçamento externo ao elemento
+
+`margin: auto;` Centraliza. Só funciona se a largura (width) estiver definida 
+
+`margin: 50px 300px 100px 100px;`
+        /*superior, direita, inferior, esquerda. Ou um valor só para todas as dimensões*/
+
+Ver o código da aula
+
+---
+
+### Aula 14 - Padding
+
+- Configuração de margem interna
+
+```css
+#d1 {
+    padding: 30px; 
+        /* é adicionado ao tamanho da largura/altura */
+}
+
+#d2 {
+    padding: 50px 0px 150px 200px;
+    /* ou */
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 150px;
+    padding-left: 200px;
+}
+```
+
+---
+
+### Aula 15 - Preenchimentos Gradientes
+
+#### `linear-gradient`
+
+```css
+#div3 {
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: linear-gradient(45deg, #f00 20%, #ff0 50%, #00f, #000 100%);
+        /* posição da cor, onde ela termina */
+}
+```
+
+- direção, cor inicial, cor final
+  - direção também pode ser `to top`, `to bottom`, `to left`
+
+#### `radial-gradient`
+
+```css
+#d4 {
+    width: 500px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: radial-gradient(circle, #f00 10%, #ff0 60%, #00f, #000 100%);
+        /* radial-gradient não tem direção */
+        /* circle é para ele não acompanhar a forma (ficaria oval), aí força a ser um círculo perfeito. */
+}
+```
+
+#### Gradiente de texto
+
+```css
+h1 {
+    font-size: 100pt;
+    background: linear-gradient(90deg, #f00, #ff0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+        /* gambiarra para deixar a fonte gradiente. Na realidade vê-se o fundo, com o corte baseado no texto */
+```
+
+#### `repeating`
+
+- Caso as porcentagens (que determinam a posição/onde termina a cor) não somem 100%, é possível colocar o `repeating`, para que o gradiente seja repetido.
+
+`background: repeating-radial-gradient(#f00 0%, #ff0 20%);`
+
+---
+
+### Aula 16 - `shadow`
+
+- Aplica uma sombra ao elemento.
+  - Recebe como valores: deslocamento x, deslocamento y, "embaçamento "(blur)
+  - Deslocamento positivo: sombra vai para baixo ou direita. Negativo: ela vai para cima ou esquerda.
+- É possível ter mais de uma sombra, basta separá-las por vírgula
+- Há o `text-shadow` e o `box-shadow`
+  - O primeiro é para texto e o segundo para os demais elementos (ex.: div)
+
+`box-shadow: 10px 10px 15px #00f;`
+
+`text-shadow: 5px 10px 10px gray, -5px -5px 5px red, -5px 5px 5px #0f0;`
+
+---
+
+### Aula 17 - Formatação de textos
+
+- Não é o mesmo que formatação de fontes (próxima aula)
+- color
+
+#### `text-align`
+
+- Left (padrão), right, center e justify
+
+#### `text-decoration`
+
+- None, underline, overline, line-through (tachado)
+- None pode ser usado para tirar o sublinhado de links por exemplo
+
+#### `text-transform`
+
+- Lowercase, uppercase, capitalize
+
+#### `text-indent`
+
+#### `letter-spacing`
+
+#### `word-spacing`
+
+#### `line-height`
+
+- Multiplica a altura da linha. Define o espaçamento.
+- `line-height: 3;`
+
+#### `direction`
+
+- `ltr` (left to right) é o padrão. Escrita ocidental, leitura da esquerda para direita
+- `rtl` (right to left) não inverte o texto, somente a formatação (a indentação do parágrafo fica na direita, por exemplo). O alinhamento é mantido
+
+#### `white-space`
+
+- Configura se o texto vai quebrar linha (e respeitar os limites do seu container) ou não
+- É definido no próprio container (ex. div)
+- nowrap, normal
+- `white-space: nowrap;`
+
+#### `overflow`
+
+- Configura o comportamento do texto que extravasa o limite do container
+- hidden, scroll (adiciona uma rolagem), auto (somente as rolagens necessárias)
+
+#### `word-break`
+
+#### `text-align-last`
+
+- Alinhamento da última linha

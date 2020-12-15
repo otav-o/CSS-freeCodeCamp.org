@@ -1,0 +1,75 @@
+p {
+    text-indent: 100px;
+}
+
+.p1 {
+    color: #f00;
+    text-align: left;
+    text-decoration: none; /* tira a formatação padrão */
+
+    text-transform: lowercase;
+
+    letter-spacing: 2px; /* 0px é o padrão */
+
+    line-height: 2; /* multiplica o espaçamento (altura da linha). 1 é o padrão */
+
+    direction: rtl; /* right to left */
+
+    word-spacing: 50px;
+
+
+    text-align-last: center /* padrão é left */
+    
+}
+
+.p2 {
+    color: #0f0;
+    text-align: right;
+    text-decoration: underline;
+
+    text-transform: uppercase;
+
+    line-height: 3;
+
+}
+.p3 {
+    color: #00f;
+    text-align: center;
+    text-decoration: overline;
+
+    text-transform: capitalize;
+}
+
+.p4 {
+    color: rgb(100, 100, 0);
+    text-align: justify;
+    text-decoration: line-through; /* tachado */
+
+
+
+}
+
+a {
+    text-decoration: none; /* remove o sublinhado */
+}
+
+
+div {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #000;
+
+    white-space: normal; 
+        /* nowrap - não obedece o limite do container */
+
+    overflow: auto;
+        /* controla o comportamento do conteúdo que está transbordando. hidden, scroll, auto */
+
+    /* como a div é curta, o texto quebrou linha (padrão) */
+
+    word-break: break-all; /* quebra em qualquer caractere, sempre que necessário. Aí não precisa da rolagem horizontal */
+        /* white-space deve estar normal. Padrão: normal */
+
+
+    
+}

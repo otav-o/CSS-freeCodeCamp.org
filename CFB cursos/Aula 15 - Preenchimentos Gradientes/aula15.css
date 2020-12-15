@@ -1,0 +1,59 @@
+#d1 {
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: linear-gradient(to bottom, #f00, #ff0);
+        /* direção, cor inicial, cor final */
+}
+
+/* gradiente linear: varia de um ponto a outro, é uma reta (não importa a direção dela) */
+
+
+#d2 {
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: linear-gradient(45deg, #f00, #ff0, #00f, #000);
+        /* direção pode ser um ângulo (deg) */
+}
+
+#d3 {
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: linear-gradient(45deg, #f00 20%, #ff0 50%, #00f, #000 100%);
+        /* posição da cor, onde ela termina */
+}
+
+#d4 {
+    width: 500px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: radial-gradient(circle, #f00 10%, #ff0 60%, #00f, #000 100%);
+        /* radial-gradient não tem direção */
+        /* circle é para ele não acompanhar a forma (ficaria oval), aí força a ser um círculo perfeito. */
+}
+
+#d5 {
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: repeating-linear-gradient(90deg, #f00 0%, #ff0 20%);
+        /* como a segunda cor não termina no 100%, dá para colocar o repeating */
+}
+#d6 {
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: repeating-radial-gradient(#f00 0%, #ff0 20%);
+        /* perceba que repete 5 vezes pois o amarelo termina nos 20% */
+}
+
+h1 {
+    font-size: 100pt;
+    background: linear-gradient(90deg, #f00, #ff0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+        /* gambiarra para deixar a fonte gradiente. Na realidade vê-se o fundo, com o corte baseado no texto */
+}

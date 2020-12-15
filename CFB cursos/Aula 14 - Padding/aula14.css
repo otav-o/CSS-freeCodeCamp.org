@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+}
+
+div {
+    border: 1px solid #000;
+    width: 500px;
+    margin: 100px;
+}
+
+#d1 {
+    padding: 30px; 
+        /* é adicionado ao tamanho da largura/altura */
+}
+
+#d2 {
+    padding: 50px 0px 150px 200px;
+    /* ou */
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 150px;
+    padding-left: 200px;
+}

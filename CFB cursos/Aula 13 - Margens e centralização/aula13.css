@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+
+div {
+    border: 1px solid #000;
+    /*inicialmente, div tem margem 0 (estão coladas uma na outra)
+    mas não estão coladas nas extremidades da página pois há uma margem da página
+    para remover esta última: ir no body e colocar margin 0px*/
+
+    margin: 50px; 
+        /*uma margem não se soma a outra*/
+
+    margin: 50px 300px 100px 100px;
+        /*superior, direita, inferior, esquerda*/
+
+}
+
+p {
+    border: 1px solid red;
+    margin: 0px; /* aproxima os parágrafos um do outro */
+    /* texto do parágrafo é diferente do parágrafo. Este pode ser manipulado pelo margin: auto, mas o texto somente com text-align */
+}
+
+#d2 {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;       
+}
+
+#d2 p {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+#d3 {
+    width: 400px;
+    margin: auto; 
+        /* só funciona (centraliza) se a largura estiver definida */
+}

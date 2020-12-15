@@ -1,0 +1,26 @@
+h1 {
+    font-size: 50pt;
+    color: #f00;
+    text-shadow: 5px 10px 10px gray; 
+        /* sombra para texto */
+        /* deslocamento horizontal (x), deslocamento vertical (y), "embaçamento" (blur), cor */
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 50pt;
+    color: #000;
+    text-shadow: 5px 10px 10px gray, -5px -5px 5px red, -5px 5px 5px #0f0;
+        /* mais de uma sombra: separar por vírgula */
+}
+
+
+/* text-shadow e box-shadow */
+
+#d1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    box-shadow: 10px 10px 15px #00f;
+        /* valor positivo é para baixo/direita. Negativo é para cima/esquerda */
+}
