@@ -248,7 +248,85 @@ body {
 
 ---
 
-### Aula 8 - Border
+### Aula 8 - border (parte 1)
 
 - border-style, border-color, border-width
-- 
+
+```css
+#d1, #d2, p {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+
+    border: green groove 20px;
+}
+
+#d2 {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+
+    border-style: solid; /*dotted, dashed, double, groove (3d), ridge (3d), inset, outset, none (padrão), hidden*/
+    border-color: pink;
+    border-width: 10px;
+}
+```
+
+---
+
+### Aula 9 - border (parte 2)
+
+```css
+p {
+    border-top: red dotted 10px;
+    border-right: blue groove 10px;
+    border-bottom: pink outset 10px;
+    border-left: green inset 10px;
+    
+    
+    border-top-width: 20px;
+    border-width: 100px; /*todas as bordas. Sobrescreve a linha anterior*/
+
+    border-bottom-style: solid;
+    border-bottom-color: navy;
+}
+```
+
+---
+
+### Aula 10 - border (parte 3)
+
+#### `border-radius`
+
+- Bordas arredondadas
+- se o `border-radius` for 100% e `width = height`, tem-se um círculo perfeito
+
+```css
+#d2 {
+    border-radius: 0px 40px 0px 40px; /*superior esquerda, superior direita, direita esquerda, inferior esquerda*/
+}
+```
+
+### Aula 11 - border (parte 4)
+
+- 15/12/2020, terça
+
+- Imagem na borda
+
+- Não adianta pegar qualquer imagem, ela deve ser trabalhada antes
+
+- Round: repete a borda
+
+- Stretch: estica a fatia da borda
+
+- Optei por não fazer o código pois não vejo utilidade. Mas é uma aula muito importante! Deve-se diferenciar as extremidades (cantos) da imagem e a borda em si.
+
+- ```css
+  p {
+  	border: 30px solid;
+  	border-image: url(borda1.png) 30 round;
+  	/* aqui que define o fatiamento, 30 é a quantidade de pixels dos cantos */
+  }
+  ```
+
+  

@@ -1,0 +1,20 @@
+p {
+    width: 300px;
+   
+    /*trabalhar cada borda de forma separada*/
+    border-top: red dotted 10px;
+    border-right: blue groove 10px;
+    border-bottom: pink outset 10px;
+    border-left: green inset 10px;
+    
+
+    /*propriedades separadas*/
+    border-top-width: 20px;
+    border-width: 100px; /*todas as bordas. Sobrescreve a linha anterior*/
+
+    border-bottom-style: solid;
+    border-bottom-color: navy;
+
+    
+
+}

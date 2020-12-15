@@ -1,0 +1,22 @@
+#d1, #d2 {
+    width: 400px; height: 100px;
+    border: #000 solid 20px;
+    margin: 10px;
+}
+
+#d1 {
+    border-radius: 40px; /*valor do raio para deixar redondo*/
+}
+
+#d2 {
+    border-radius: 0px 40px 0px 40px; /*superior esquerda, superior direita, direita esquerda, inferior esquerda*/
+}
+
+/*se o border-radius for 100% e width = height, tem-se um círculo perfeito*/
+#d3 {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    border-radius: 100%;
+}
+

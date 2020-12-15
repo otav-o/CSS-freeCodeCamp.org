@@ -1,0 +1,17 @@
+#d1, #d2, p {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+
+    border: green groove 20px;
+}
+
+#d2 {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+
+    border-style: solid; /*dotted, dashed, double, groove (3d), ridge (3d), inset, outset, none (padrão), hidden*/
+    border-color: pink;
+    border-width: 10px;
+}
