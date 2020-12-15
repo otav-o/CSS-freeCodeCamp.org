@@ -1,0 +1,5 @@
+body {
+    background: #aaa  url(folha.jpg) 50% 0px / 40px no-repeat;
+    /* pelo visto a ordem não faz diferença */
+    /* center = 50%? */
+}

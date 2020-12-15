@@ -230,3 +230,25 @@ body {
 
 #### Metapropriedade background
 
+- Configuração de várias propriedades em apenas uma
+
+```css
+body {
+    background: #AAA url(folha.jpg) repeat-x 10px 0px / 200px;
+    /*cor, imagem, repetição, posição de início da imagem, tamanho (colocar barra antes. Pode ser em porcentagem também - aí ajusta à janela)*/
+    
+    background-color: #fff;
+    background-image: url(folha.jpg);
+    background-repeat: no-repeat;
+    background-position: center, 0px; /*center ou 50%*/
+}
+```
+
+- Parece que a ordem não faz diferença 
+
+---
+
+### Aula 8 - Border
+
+- border-style, border-color, border-width
+- 

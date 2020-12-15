@@ -1,3 +1,9 @@
 body {
-    background-image: url(), url();
+    background-image: url(bacenLogo.png), url(folha.jpg);
+
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, scroll;
+    background-size: 400px, 30px;
+    
 }
+
