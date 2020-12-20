@@ -1,0 +1,63 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+
+    transform: translate(200px, -20px);
+        /* (x, y) também aceita negativo */
+
+    transform: rotate(-25deg);
+        /* em qualquer transform, o ponto de origem padrão é o centro */
+
+    transform: scale(0.9);
+        /* 2 para dobrar, 0.5 para metade, etc. */
+
+        /* usar mais de um valor para transform: deixar tudo junto, senão eles se sobrescrevem */
+        /* também tem scale x e y */
+
+    
+    transform: skewX(-20deg);
+        /* inclinar para a esquerda (positivo)*/
+    transform: skewY(45deg);
+        /* inclina na vertical */
+
+    transform: skew(0deg, -45deg);
+        /* isso me parece 3D */
+
+    /* transform: matrix(scaleX, skewX, skewY, scaleY, translateX, translateY); */
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+        /* para aplicar todos */
+
+
+
+
+
+
+    /* determinar o ponto de origem para a transformação (porcentagem é o jeito mais fácil */
+    
+    transform-origin: 0% 0%; /* x, y */
+        /* topo esquerdo */
+    
+    transform-origin: 50% 0%;
+        /* topo meio */
+        
+    transform-origin: 100% 0%;
+        /* topo direito */
+
+    transform-origin: 0% 100%;
+        /* fundo esquerdo */
+
+    transform-origin: 100% 100%;
+        /* fundo direito */
+    
+    transform: rotate(15deg);
+
+    
+    
+        
+
+
+
+
+}

@@ -1,0 +1,26 @@
+#obMenu {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+a { /* a área do clique é toda a caixa, não somente o texto */
+    text-decoration: none;
+    background-color: #004;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    display: table-cell; /* */
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
+
+a:hover {
+    background-color: #88d;
+}  
+
+/* também é legal fazer o menu com listas */
+

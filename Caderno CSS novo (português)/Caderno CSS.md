@@ -444,7 +444,8 @@ h1 {
 ### Aula 17 - Formatação de textos
 
 - Não é o mesmo que formatação de fontes (próxima aula)
-- color
+
+#### `color`
 
 #### `text-align`
 
@@ -473,7 +474,7 @@ h1 {
 #### `direction`
 
 - `ltr` (left to right) é o padrão. Escrita ocidental, leitura da esquerda para direita
-- `rtl` (right to left) não inverte o texto, somente a formatação (a indentação do parágrafo fica na direita, por exemplo). O alinhamento é mantido
+- `rtl` (right to left) não inverte o texto, somente a formatação (a indentação do parágrafo fica na direita, por exemplo). O alinhamento é mantido.
 
 #### `white-space`
 
@@ -489,6 +490,105 @@ h1 {
 
 #### `word-break`
 
+- break-all (quebra em qualquer caractere, sempre que necessário), normal
+
 #### `text-align-last`
 
 - Alinhamento da última linha
+- Padrão é left
+- `text-alig-last: center;`
+
+---
+
+### Aula 18 - Formatação de fontes
+
+#### `font-family`
+
+- Grupo de fontes que serão aplicadas (colocar mais de uma pois, se alguma falhar, usa-se outra)
+- Se tiver espaço entre as palavras, deve-se colocar entre aspas
+- `font-family: Arial, "Times New Roman", sans-serif;`
+
+#### `font-style`
+
+- italic, oblique (itálico mais tombado)
+
+#### `font-weight`
+
+- lighter, boldd
+
+#### `font-variant`
+
+- normal, small-caps (o texto fica em caixa alta mas as letras maiúsculas são mantidas)
+
+#### `font-size`
+
+- `font-size: 30px;`
+
+#### `@font-face { }`
+
+- Adiciona uma fonte de um arquivo externo
+
+- ```css
+  @font-face {
+    font-family: fontCFB;
+    src: url(fonte/ITCBLKAD.TTF);
+  }
+  
+  p {
+      font-family: fontCFB, cursive; 
+  }
+  ```
+
+#### Fonte externa (Google Fonts)
+
+- Basta copiar o código do site ou baixar o arquivo e seguir o `@font-face` 
+  - No primeiro caso, é só adicionar o `link` dentro do html, no `<head>` e usar a fonte normalmente.
+
+---
+
+### Aula 19 - Formatação de links
+
+```css
+a:hover { /* quando o mouse estiver sobre o link */
+    color: #f00;
+    background-color: #060;
+}
+
+a { /* muda todos os estados do link */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: block; /* fica um embaixo do outro (antes era inline) */
+    padding: 10px;
+    background-color: #006;
+}
+
+a:link, a:visited { }
+```
+
+- `link`: normal, link não visitado
+- `visited`: já foi clicado anteriormente
+- `active`: está sendo clicado
+- `hover`: mouse está sobre o link
+
+---
+
+### Aula 20 - Criando um menu externo
+
+- Cria-se o menu em outro arquivo html para que possa ser facilmente alterado (por exemplo, adicionar um novo link ou mudar o texto).
+- O menu deve ter um código css associado a ele (externo ou não) e o css de cada página não interfere em seu estilo (se forem arquivos diferentes).
+- Tag `<object>` insere o menu.
+  - Nas páginas do site (dentro do body)
+
+```html
+<nav>
+    <object id='obMenu' data='menu.html'></object>
+</nav>
+```
+
+Lembretes HTML: `<a target='_new'>` : abre na aba já aberta de um link do mesmo domínio. `_blank` *sempre* abre em nova aba. `_parent` (abriu no menu), `_self`
+
+---
+
+não confundir translate com posicionamento: ele vai mover do ponto original onde está, é relativo (*)
+

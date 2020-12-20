@@ -1,0 +1,15 @@
+@font-face {
+  font-family: fontCFB;
+  src: url(fonte/ITCBLKAD.TTF);
+}
+
+p {
+  font-family: 'Bungee Outline', cursive; /* link externo */
+  font-style: oblique; /* italic */
+  font-size: 30px;
+  font-weight: lighter; /* bold */
+  font-variant: small-caps; /* todo o texto fica em maiúsculo, mas o que já era maiúsculo fica maior (é possível diferenciar) */
+  /* normal */
+}
+
+/* fonte externa: arquivo ou link */

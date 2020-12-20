@@ -1,0 +1,25 @@
+a:link { /* não visitado */
+    color: yellow;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active { /* sendo clicado */
+    color: pink;
+}
+
+a:hover { /* quando o mouse estiver sobre o link */
+    color: #f00;
+    background-color: #060;
+}
+
+a { /* muda todos os estados do link */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: block; /* fica um embaixo do outro (antes era inline) */
+    padding: 10px;
+    background-color: #006;
+}
