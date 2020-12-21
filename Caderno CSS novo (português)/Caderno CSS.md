@@ -590,5 +590,167 @@ Lembretes HTML: `<a target='_new'>` : abre na aba já aberta de um link do mesmo
 
 ---
 
-não confundir translate com posicionamento: ele vai mover do ponto original onde está, é relativo (*)
+### Aula 21 - Transformações 2D
+
+- Somente nos eixos X e Y.
+- `transform: [uma das funções abaixo];`
+
+| Sintaxe                                                      | O que faz                                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `translate(200px, -20px);`                                   | Desloca o elemento pela página a partir da posição original  |
+| `rotate(-25deg)`                                             | Rotação (centro é o ponto de origem)                         |
+| `scale(0.9)`                                                 | Reduz ou aumenta o elemento. Também existe `scaleX` e `scaleY` |
+| `skewX(-20deg)`                                              | Inclina para a esquerda se positivo, direita se negativo (de forma tridimensional) |
+| `skewY(45deg)`                                               | Inclina verticalmente                                        |
+| `skew(0deg, -45deg);`                                        | `skewX` e `skewY` em uma linha                               |
+| `matrix(scaleX, skewX, skewY, scaleY, translateX, translateY)` | Junção de todos em uma única linha. Usar `transform` em linhas separadas faz com que um sobrescreva o outro |
+
+```css
+#div1 {
+	transform: scale(2);
+}
+```
+
+
+- `transform-origin`: determina o ponto de origem para a transformação. Também tem que deslocar com o translate
+
+```css
+div {
+    transform-origin: 0% 0%; /* x, y */
+}     /* topo esquerdo */
+```
+
+---
+
+### Aula 22 - Transformações 3D
+
+- Agora com um eixo Z (de profundidade)
+- Lembrar do `transform: ` antes
+
+| Sintaxe              | Descrição                                                    |
+| -------------------- | ------------------------------------------------------------ |
+| `rotateY(45deg)`     | Eixo Y é uma linha vertical no centro do elemento. Valor positivo: direita, negativo: esquerda |
+| `rotateX(-180deg)`   | Roda com base no eixo x (ele fica fixo). Positivo: gira para cima |
+| `rotateZ(200deg)`    | Roda com base no eixo z. O ponto de giro é o centro do elemento |
+| `perspective(500px)` | aplicada no container pai do elemento. Dá uma noção de profundidade, de distância no eixo Z |
+
+`backface-visibility: visible;`
+
+- ou `hidden`
+
+---
+
+### Aula 23 - Formatações para listas
+
+```css
+ul, ol {
+    list-style-type: lower-roman;
+    	/* circle, disc, decimal, square, decimal-leading-zero, lower-alpha, none, lower-greek, lowe-roman, upper-roman  */
+    
+    list-style-image: url(foto.jpg);
+        /* imagem como marcador. O bom é ser png */
+    
+    list-style-position: inside;
+        /* padrão é outside. Coloque bordas no <li> para ver */
+}
+```
+
+- Também há a meta-propriedade:
+
+```css
+ul, ol {
+	list-style: decimal-leading-zero outside;
+        /* meta-propriedade */
+
+    list-style: none;
+        /* remover os marcadores */
+}        
+```
+
+- Relembrando o menu (com links ou listas)
+
+```css
+li {
+    width: 200px;
+    height: 40px;
+	background-color: #800;
+    display: table-cell; /* essa linha possibilita a existência da seguinte */
+    vertical-align: middle;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #500;
+}
+```
+
+---
+
+### Aula 24 - Formatação para tabelas
+
+- **`border`**
+- **`table-layout: fixed;`**
+  - mesma largura para todas as colunas
+- **`border-collapse: collapse;`**
+  - `collapse` (junta as células) ou `separate` (padrão)
+- **`border-spacing: 50px 10px;`**
+  - x, y
+  - só funciona se o border-collapse for separate
+- **`empty-cells: hide;`**
+  - `show` ou `hide`
+  - `hide` só funciona se o border-collapse for separate
+- **`vertical-align: middle;`**
+  - top, bottom, middle (center), sendo este último o padrão
+  - só funciona para elementos de tabela. Por isso que, em uma div, usamos 'display: table-cell', funciona como uma conversão
+- **`text-align: center;`**
+  - Pode ser um alinhamento horizontal, mas não sei se seve para outros elementos da célula
+
+```css
+table, td {
+	border: 1px solid black;
+	/* na tag table aplica somente à borda externa */
+}
+```
+
+```css
+tr:nth-child(even) { /* formatação zebra, linhas pares. Não é exclusiva de tabelas. Ex.: parágrafos*/
+    background-color: #ddd;
+} 
+/* td para zebrar colunas */
+```
+
+---
+
+### Aula 25 - Outline
+
+- Linha externa ao elemento. Não ocupa espaço como margem/borda. 
+- Tem configurações semelhantes ao border. 
+- Não afasta os elementos ao redor.
+
+![image-20201221195814079](image-20201221195814079.png)
+
+- Margin é definida a partir da borda, não da outline
+
+```css 
+#div1 {
+    border: 20px solid #000;
+        /* desloca os elementos ao redor (border ocupa espaço) */
+
+    outline-color: #f00;
+    outline-style: solid;
+    outline-width: 40px;
+
+        /* outline não ocupa espaço */
+    
+	outline: #ff0 solid 40px;
+    	/* meta-propriedade */
+    
+    outline-offset: 50px;
+        /* aumenta o espaçamento entre o outline e o elemento. Semelhante a um padding */
+}
+```
+
+---
+
+### Aula 26 - Display (parte 1)
 

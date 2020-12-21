@@ -1,0 +1,40 @@
+ul, ol {
+    list-style-type: lower-roman;
+        /* circle, disc, decimal, square, decimal-leading-zero, lower-alpha, none, lower-greek, lowe-roman, upper-roman  */
+    font-size: 25px;
+
+    list-style-image: url(foto.jpg);
+        /* imagem como marcador. O bom é ser png */
+
+    list-style-position: inside;
+        /* padrão é outside. Coloque bordas no <li> para ver */
+
+
+    list-style: decimal-leading-zero outside;
+        /* metapropriedade */
+
+    list-style: none;
+        /* remover os marcadores */
+
+    padding: 0;
+}
+
+li {
+    border: black 1px solid;
+        /* o marcador não faz parte da área do li. Para deixá-lo dentro, colocar position inside */
+
+    width: 200px;
+    height: 40px;
+    background-color: #800;
+    display: table-cell; /* essa linha possibilita a existência da seguinte */
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #fff;
+
+    color: #fff;
+}
+
+li:hover {
+    background-color: #500;
+}
+/* três comandos básicos para listas */

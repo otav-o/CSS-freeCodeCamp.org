@@ -1,0 +1,23 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+
+
+    transform: rotateX(300deg); /* rodar com base no eixo x (ele fica fixo). Positivo: gira para cima */
+    transform: rotateZ(-200deg); /* roda com base no eixo z. O ponto de giro é o centro do elemento */
+
+    transform: rotateY(115deg);
+
+    /* lembrando que não dá para colocar mais de um transform, eles se sobrescrevem */
+    
+    backface-visibility: visible; /* hidden */
+
+    
+}
+
+body {
+    perspective: 500px;
+        /* aplicada no container, e não no elemento (por isso está no body) */
+        /* dá uma noção de profundidade */
+}

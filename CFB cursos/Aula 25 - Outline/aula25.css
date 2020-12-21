@@ -1,0 +1,36 @@
+div {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: #ddd;
+
+    border: 1px #000 solid;
+    margin-bottom: 10px;
+
+
+    outline-offset: 50px;
+        /* aumenta o espaçamento entre o outline e o elemento. Semelhante a um padding */
+   
+}
+
+#div1 {
+    border: 20px solid #000;
+        /* desloca os elementos ao redor (border ocupa espaço) */
+
+    outline-color: #f00;
+    outline-style: solid;
+    outline-width: 40px;
+
+        /* outline não ocupa espaço */
+
+}
+
+#div2 {
+    width: 400px;
+    outline: #ff0 solid 40px;
+}
+/* a div2 está na frente da 1 */
+/* primeiro vem a borda, depois o outline */
+/* margin: 20px 20px 20px 20px é a partir da borda, não do outline */
+
+

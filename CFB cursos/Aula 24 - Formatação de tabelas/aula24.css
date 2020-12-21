@@ -1,0 +1,38 @@
+table, td {
+    border: 1px solid black;
+        /* espessura, tipo e cor. Na tag table aplica somente à borda externa */
+}
+
+table {
+    width: 500px;
+    table-layout: fixed; /* mesmo valor para todas as colunas */
+        
+    border-collapse: collapse;
+        /* espaçamento entre células. Colocado no table. Separate (padrão), collapse (junta) */
+    border-spacing: 50px 10px;
+        /* horizontal, vertical. Só funciona se o border-collapse for separate */
+
+    empty-cells: hide;
+        /* como será o comportamento das células vazias. Show é o padrão, hide só funciona se o border-collapse for separate!; */
+}
+
+td, th {
+    height: 50px;
+    vertical-align: middle;
+        /* top, bottom, middle (center), sendo este último o padrão */
+        /* só funciona para elementos de tabela. Por isso que, em uma div, usamos 'display: table-cell', funciona como uma conversão */
+    text-align: center;
+} 
+
+th {
+    background-color: #8a8;
+    color: #fff;
+    font-size: 25px;
+    border: 1px white solid;
+}
+
+tr:nth-child(even) { /* formatação zebra, linhas pares. Não é exclusiva de tabelas. Ex.: parágrafos*/
+    background-color: #ddd;
+} 
+/* td para zebrar colunas */
+
