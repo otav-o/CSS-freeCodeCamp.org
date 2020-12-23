@@ -1,0 +1,23 @@
+section {
+    border: 3px solid #f00;
+    height: 200px;
+
+    display: flex;
+
+    flex-wrap: nowrap;
+
+    justify-content: flex-end;
+        /* Alinhamento horizontal. flex-start (padrão), flex-end, center */
+
+    align-items: center;
+        /* Alinhamento vertical. flex-start (padrão) */
+        /* facilita muito: não precisou colocar display: table-cell para depois vertical-align: middle */
+        
+    flex-direction: column;
+        /* row (padrão), column, row-reverse, column-reverse */
+}
+
+div {
+    border: 1px solid #000;
+    width: 100px;
+}

@@ -1,0 +1,19 @@
+section {
+    /* section é o container dos elementos div */
+    border: 3px solid #f00;
+    display: flex;
+        /* torna o container flexível, e seus elementos podem receber formatações flex */
+
+    min-width: 500px;
+        /* não reduz mais que isso */
+
+    flex-wrap: wrap;
+        /* nowrap (padrão), wrap (quebra linha se não couber na página) */
+}
+
+div {
+    border: 1px solid #000;
+    /* flex: 1; */
+        /* elementos se ajustam ao container (ocupam igualmente o mesmo espaço disponível), sendo ele flexível ou não */
+    width: 100px;
+}

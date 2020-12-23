@@ -1,0 +1,42 @@
+/* é melhor acompanhar pelo caderno! */
+/* posicionamento, disposição dos elementos na tela */
+/* todos os elementos html têm o seu display, a <script> por exemplo é none*/
+
+
+div, span {
+    border: 1px solid black;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+        /* o que era block ficou limitado, pois ocupava a área quando não tinha limite */
+        /* inline não aplica width e height */
+}
+
+#d1 {
+    display: none;
+        /* "desabilitar" o elemento: ele está lá mas não é renderizado  */
+        /* desaparece e seu lugar é ocupado por outros elementos: ele não fica só transparente, e sim desaparece*/
+        /* como se não existisse */
+    visibility: hidden;
+        /* simplesmente oculta o elemento, que continua lá no espaço */
+
+    display: inline-block;
+    visibility: visible;
+}
+
+#s1 {
+    display: inline-block;
+}
+
+#d2 {
+    display: block;
+}
+
+#s2 {
+    display: inline;
+}
+
+/* display block (padrão para divs) elemento egoísta, executa quebra de linha antes e depois. Fica com a linha só para ele */
+/* display: inline (padrão para span) permite adicionar mais elementos na linha mas não segue a formatação de tamanhos indicada: a caixa do objeto será estritamente em torno de seu conteúdo*/
+/* inline-block- permite elementos na mesma linha (inline) respeitando as medidas definidas (block) */
+/* none: desabilita o elemento, como se ele não existisse */

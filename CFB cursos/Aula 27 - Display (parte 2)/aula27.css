@@ -1,0 +1,52 @@
+/* table, table-row, table-cell */
+/* configurar elementos como se pertencessem a uma tabela (ou configurar uma tabela de verdade) */
+
+div {
+    border: 1px solid #000;
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    display: table-cell; 
+        /* comporta-se como um td */
+
+    text-align: center;
+
+    vertical-align: middle;
+        /* vertical-align só funciona se for table-cell */
+        /* middle, bottom */
+
+    /* line-height: 200px; */
+        /* configurado com o mesmo valor de altura do elemento também faz o papel de centralização vertical (tirar o display antes)*/
+
+    margin-bottom: 10px;
+        /* não funciona para table-cell */
+}
+
+ol, ul, li {
+    border: 1px solid #000;
+    margin: 0px;
+    padding: 0px
+}
+
+ol {
+    margin-top: 10px;
+        /* só funciona aqui */
+    display: table;
+        /* ol é a tabela */
+}
+
+ul {
+    display: table-row;
+        /* tr */
+}
+
+li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+.titulo {
+    background-color: turquoise;
+}
+

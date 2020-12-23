@@ -752,5 +752,118 @@ tr:nth-child(even) { /* formatação zebra, linhas pares. Não é exclusiva de t
 
 ---
 
-### Aula 26 - Display (parte 1)
+### Aula 26 - Display: inline, block, none
+
+```css
+#s1 {
+    display: inline-block;
+}
+```
+
+| Valor           | O que faz                                                    | Observação                                                   |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `none;`         | Desabilita o elemento, como se ele não existisse             | Diferente do `visibility: hidden/visible;`                   |
+| `block;`        | Elemento egoísta, quebra a linha antes e depois, ficando com ela só para ele (não fica com nada ao seu lado) | Padrão para `<div>`. Ocupa toda a área da linha se width e height não forem definidos. |
+| `inline;`       | Permite adicionar mais elementos na linha mas não segue a formatação de tamanhos indicada: a caixa do objeto será estritamente em torno de seu conteúdo | Padrão para `<span>`                                         |
+| `inline-block;` | permite elementos na mesma linha (`inline`) respeitando as medidas definidas (`block`) |                                                              |
+
+---
+
+### Aula 27 - Display para tabelas
+
+![image-20201223170821533](image-20201223170821533.png)
+
+```css
+ol, ul, li {
+    border: 1px solid #000;
+    margin: 0px;
+    padding: 0px
+}
+
+ol {
+    margin-top: 10px;
+        /* só funciona aqui */
+    display: table;
+        /* ol é a tabela */
+}
+
+ul {
+    display: table-row;
+        /* tr */
+}
+
+li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+.titulo {
+    background-color: turquoise;
+}
+
+```
+
+| Valor         | O que faz                    | Observação                                                   |
+| ------------- | ---------------------------- | ------------------------------------------------------------ |
+| `table;`      | Define uma tabela            | Colocar em uma tag externa aos elementos (se quiser criar uma tabela) |
+| `table-row;`  | Define a linha de uma tabela |                                                              |
+| `table-cell;` | Célula de uma tabela         | Valor necessário para definir `vertical-align:[]`. Não tem como colocar margin. |
+
+---
+
+### Aulas 28 e 29 - Display flex e propriedades flex
+
+- `display: flex;` - para o container
+- Propriedade `flex`: filhos dos container
+- Serve para ajuste dos elementos de um container (para não ter que determinar largura, usar floats, inlines diferentes, trabalhar com proporcionalidade)
+
+```css
+section {
+    /* section é o container dos elementos div */
+    border: 3px solid #f00;
+    display: flex;
+        /* torna o container flexível, e seus elementos podem receber formatações flex */
+
+    min-width: 500px;
+        /* não reduz mais que isso */
+
+    flex-wrap: wrap;
+        /* nowrap (padrão), wrap (quebra linha se não couber na página) */
+}
+
+div {
+    border: 1px solid #000;
+    flex: 1;
+        /* elementos se ajustam ao container (ocupam igualmente o mesmo espaço disponível), sendo ele flexível ou não */
+    /*width: 100px;*/
+    	/* não funciona com o flex: 1 definido */
+}
+```
+
+```css
+section {
+    border: 3px solid #f00;
+    height: 200px;
+
+    display: flex;
+
+    flex-wrap: nowrap;
+
+    /*Alinhamento horizontal. */
+    justify-content: flex-end;
+        /* flex-start (padrão), flex-end, center */
+    
+	/* Alinhamento vertical. flex-start (padrão) */
+    align-items: center;
+        /* mesmos valores do justify-content */
+        
+    flex-direction: column;
+        /* row (padrão), column, row-reverse, column-reverse */
+}
+```
+
+---
+
+### Aula 30 - Display
 
