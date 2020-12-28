@@ -1,0 +1,24 @@
+p.pseudo::before {
+    content: "oi";
+    color: #f00;
+}
+p.pseudo::after {
+    content: "-- final";
+    color: green
+}
+
+p {
+    font-size: 30px;
+}
+p.pseudo2::first-letter {
+    color: #0f0;
+}
+p.pseudo2::first-line {
+    background-color: #ff0;
+}
+
+::selection {
+    /* formata o texto que está selecionado pelo usuário */
+    background: #f00;
+    color: green;
+}

@@ -1,0 +1,18 @@
+img {
+    height: 150px;
+}
+/* imagem é por padrão block e o texto fica abaixo dela */
+
+#img1 {
+    float: left;
+    
+}
+#img2 {
+    float: right;
+    height: 300px;
+}
+.fix {
+    clear: left; 
+        /* clear cancela o float. Pode cancelar a esquerda, a direita ou os dois */
+    clear: both;
+}

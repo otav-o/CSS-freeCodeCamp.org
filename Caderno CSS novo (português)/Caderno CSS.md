@@ -483,10 +483,10 @@ h1 {
 - nowrap, normal
 - `white-space: nowrap;`
 
-#### `overflow`
+####  `overflow`
 
 - Configura o comportamento do texto que extravasa o limite do container
-- hidden, scroll (adiciona uma rolagem), auto (somente as rolagens necessárias)
+- hidden, scroll (adiciona uma rolagem), auto (somente as rolagens necessárias - inclusive nenhuma), visible
 
 #### `word-break`
 
@@ -918,5 +918,92 @@ metapropriedade flex: 0 1 auto;
 
 ### Aula 34 - Propriedades float e clear
 
+- Elementos flutuantes na página
 
+```css
+/* imagem é por padrão block e o texto fica abaixo dela */
 
+#img1 {
+    float: left; 
+    	/* permite elementos a sua direita */
+}
+#img2 {
+    float: right; /* permite elementos a sua esquerda */
+    height: 300px;
+}
+.fix {
+    clear: left; 
+        /* clear cancela o float. Pode cancelar a esquerda, a direita ou os dois */
+    clear: both;
+}
+```
+
+- Os elementos após o uso do clear não ficam mais ao lado dos flutuantes, e sim embaixo deles.
+
+---
+
+### Aula 35 - Overflow
+
+- Já visto na aula 17
+
+---
+
+### Aula 36 - Pseudo-elementos (after, before)
+
+- O que vai ter antes (lado esquerdo) ou depois (lado direito) de um elemento 
+- Precisa de algo (content) para receber a formatação. 
+- Não foi possível formatar imagens (pelo menos eu não consegui)
+
+```css
+p.classe::before {
+    content: "oi";
+    content: url(marcador.png);
+    color: #f00;
+}
+p::after {
+    content: "-- final";
+    color: green
+}
+```
+
+---
+
+### Aula 37 - Mais pseudo-elementos (first-letter, first-line, selection)
+
+- primeira letra de um texto
+- primeira linha de um texto
+- selection é um first-line para a página
+
+```css
+p.pseudo2::first-letter {
+    color: #0f0;
+}
+p.pseudo2::first-line {
+    background-color: #ff0;
+}
+
+::selection {
+    /* formata o texto que está selecionado pelo usuário */
+    background: #f00;
+    color: green;
+}
+```
+
+---
+
+### Aula 38 - Transition
+
+- Uma animação que precisa ser disparada por um evento (ex. hover)
+- É diferente de `animation`
+- Inserido no elemento original, não no disparador
+
+```css
+p {
+    transition: width 2s, height 2s, background-color 2s, color 2s;
+    transition-timing-function: cubic-bezier(0, 0.5, 1, 0.5);
+            /* ease (padrão), linear - velocidade constante, ease-in - início é devagar e depois acelera, ease-out */
+            /* cubic-bezier(x1,y1,x2,y2) */
+}     
+```
+
+continuar da aula 39
