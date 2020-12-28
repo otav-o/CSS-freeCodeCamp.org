@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    border: 1px solid #000;
+    background: #ddd;
+}
+#d0 {
+    background: #eef;
+    position: absolute;
+        /* static é o posicionamento padrão. Após o elemento posterior (desde que tenha display block */
+        /* absolute em relação ao container (da div 0 é o body) */
+        /* relative em relação ao elemento anterior */
+    top: 50px;
+    left: 100px;
+    width: 700px;
+    height: 500px;
+}
+#d1, #d2 {
+    width: 300px;
+    height: 150px;
+}
+#d1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+#d2 {
+    position: absolute;
+        /* position diferente de static permite a definição de left e top (eixos x e y) */
+    left: 70px;
+    top: 70px;
+}

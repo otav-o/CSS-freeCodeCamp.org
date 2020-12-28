@@ -812,11 +812,11 @@ li {
 
 ---
 
-### Aulas 28 e 29 - Display flex e propriedades flex
+### Aulas 28, 29, 30 - Display flex e propriedades flex
 
 - `display: flex;` - para o container
 - Propriedade `flex`: filhos dos container
-- Serve para ajuste dos elementos de um container (para não ter que determinar largura, usar floats, inlines diferentes, trabalhar com proporcionalidade)
+- Serve para ajuste dos elementos (para não ter que determinar largura, usar floats, inlines diferentes, trabalhar com proporcionalidade)
 
 ```css
 section {
@@ -837,7 +837,7 @@ div {
     flex: 1;
         /* elementos se ajustam ao container (ocupam igualmente o mesmo espaço disponível), sendo ele flexível ou não */
     /*width: 100px;*/
-    	/* não funciona com o flex: 1 definido */
+    	/* não funciona com o flex: 1 definido, pois este já é para ajustar a largura */
 }
 ```
 
@@ -863,7 +863,60 @@ section {
 }
 ```
 
+Flex para os elementos
+
+order: 1
+
+metapropriedade flex: 0 1 auto;
+
+- flex-grow
+  - Expansão - ocupa o espaço vazio do container
+  - 1 estica, 0 não estica
+- flex-shrink
+  - Contração
+  - 2 para contrair, 0 para não contrair
+- flex-basis
+  - só faz sentido ter um valor diferente de auto se flex-grow for 0ss
+
+> É melhor praticar aqui: [Guia completo de Flexbox - CSS - display: flex; (origamid.com)](https://origamid.com/projetos/flexbox-guia-completo/)
+
 ---
 
-### Aula 30 - Display
+### Aula 31 - Desafio
+
+| Propriedade        | Valores                     | O que faz | Onde é usada |
+| ------------------ | ---------------------------- | ------------ | ------------------ |
+| `display: ;`       | `flex`                       |   | container |
+| `justify-content: ;` | `center`, `flex-end`, `flex-start` | alinhamento horizontal | container |
+| `align-items: ;` | \|\| | alinhamento vertical |container|
+| `flex-wrap: ;` | | |container|
+| `flex: ;` | 1 | dimensiona. Inutiliza width e/ou height (aí tem que usar min/max-width/height) |elementos|
+
+---
+
+### Aula 33 - Propriedades position e z-index
+
+- Posicionar elementos em qualquer parte da tela
+- position: 
+  - static (padrão)
+    - Não interessa top e left, é posicionado imeditamente após o elemento anterior
+  - absolute
+    - consegue determinar uma posição pelas propriedades top e left
+      - top: distância da margem superior. Eixo Y
+      - left: distância da margem esquerda. Eixo X
+    - absoluto **em relação ao container**
+  - relative
+    - **relativo em relação ao elemento anterior** (ex.: uma div)
+    - desde que a posição do outro elemento seja static
+  - fixed
+    - orienta-se pela janela (body)
+    - Não está nem aí para o container pai
+- z-index
+  - Quanto maior o número, mais a frente o elemento está
+
+----
+
+### Aula 34 - Propriedades float e clear
+
+
 

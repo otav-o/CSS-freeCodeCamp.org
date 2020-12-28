@@ -1,0 +1,39 @@
+* {
+    /* outline: 1px solid #000; */
+}
+header, section, nav, footer {
+    display: flex;
+}
+header {
+    height: 150px;
+}
+nav {
+    justify-content: flex-end;
+    background: tomato;
+    flex-wrap: wrap;
+}
+nav a {
+    height: 50px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center; /* só funciona se for display flex */
+    justify-content: center;
+}
+section {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section div {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    /* flex: 1; */ /* impede o uso de width (aí teria que usar min e max) */
+    border: 1px solid black;
+}
+footer {
+    background: #888;
+    color: #fff;
+    justify-content: center;
+}
+/* Observe o que é e o que não é para container */
