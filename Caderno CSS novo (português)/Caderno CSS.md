@@ -1006,4 +1006,14 @@ p {
 }     
 ```
 
-continuar da aula 39
+> Aula 39: transition-delay: 1s
+>
+> transform junto das transições: colocar o transform e o seu tempo na propriedade transition
+>
+> /* atraso para o início da transição. Padrão é 0s */
+
+---
+
+# Interrompido
+
+28/12/2020, segunda
